@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+
+<body class="conteudoExercicio">
+    <h1>Entendendo jQuery</h1>
+    <div>1</div>
+    <div>2</div>
+
+    <!--dollar faz parte da sintaxe do jQuery, entre parenteses o seletor do que vai ser trabalhado mas também poderia
+    acessar pelo ponto "." hide, show e fadeout é o comando para esconder os elementos do parametro(no caso, esconde as div,  mostra  e desaparece "apagando") e dentro dos
+    parentes seguintes é o tempo em que isso vai acontecer.-->
+
+    <script>
+        $("div").hide(5000).show(5000).fadeOut(5000)
+
+        $.fn.fundoVerde = function () {
+            this.css("background-color", "green")
+            return this
+        }
+
+        $("body").fundoVerde().fadeOut(1000)
+
+    </script>
+
+</body>
+
+</html>

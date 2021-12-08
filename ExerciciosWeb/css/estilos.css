@@ -1,0 +1,13 @@
+body{
+    background-color: burlywood;
+}
+
+p, form, #feira{
+    text-align: center;
+    margin-left: 350px;
+    width: 650px;
+    border: 10px solid rgb(86, 1, 126);
+    padding: 10px;
+    border-radius: 10px
+}
+

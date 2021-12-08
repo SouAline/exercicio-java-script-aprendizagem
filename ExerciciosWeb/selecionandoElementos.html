@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Selecionando Elementos</title>
+</head>
+
+<body>
+    <div>
+        <p>
+            <span class="negrito">Dentro span</span>
+        </p>
+    </div>
+    <div>
+        <ul id="feira">
+            <li>Arroz</li>
+            <li wn-obrigadtorio>Feijão</li>
+            <li class="opcional">Carne</li>
+            <li class="opcional">Ovo</li>
+        </ul>
+    </div>
+    <form>
+        <input type="text" name="texto">
+        <input type="password" name="senha">
+        <input type="checkbox" name="check1">
+        <input type="radio" name="radio1">
+        <input type="file" name="arquivo">
+    </form>
+
+    <script>
+        $("#feira").css("border", "solid 3px yellow") //setando css pelo jquery
+        $("li:first").css("border", "solid 3px green")//aplica borda no primeiro li
+        $("li:gt(1)").css("border", "solid 10px white")//gt significa maior que, e dentro do parenteses vai o indice que você quer que ele considere como ponto de partida
+        $('li:contains("r")').css("background-color", "black")
+        $("form *").hide()//esconde o form
+        $("form :text").show()//mostra form
+        $("form :checkbox").show()
+    </script>
+</body>
+
+</html>
