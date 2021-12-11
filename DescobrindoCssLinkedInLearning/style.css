@@ -1,0 +1,8 @@
+body{
+    background-color: #dfdfdf;
+}
+
+.site-nav, .bebida{
+    background-color: #f9f9ff;
+    list-style-type: none;
+}
