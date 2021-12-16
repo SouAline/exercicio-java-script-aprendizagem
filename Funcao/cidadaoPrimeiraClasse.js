@@ -1,4 +1,4 @@
-//voce pode tratar funcao como sendo dado então voce pode passa uma funcao como parâmetro, pode ter uma função dentro da outra//
+//voce pode tratar funcao como sendo dado então voce pode passa uma funcao como parâmetro, pode ter uma função dentro da outra
 //criar função de forma literal
 
 function fun1() { }
