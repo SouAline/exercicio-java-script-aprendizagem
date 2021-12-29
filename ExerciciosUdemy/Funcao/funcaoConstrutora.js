@@ -11,13 +11,17 @@ function Carro(velocidadeMaxima = 200, delta = 5) {
         }
 
         //metodo publico
-        this.getVelocidadeaTUAL = function () {
+        this.getVelocidadeAtual = function () {
             return velocidadeAtual
         }
     }
 }
 
-const uno = new Carro
-uno.acelerar()
-console.log(uno.getVelocidadeAtual())
+const uno = new Carro //instanciando um objeto
+uno.acelerar() //chamando o metodo acelerar 
+console.log(uno.getVelocidadeAtual()) // 
+
+const ferrari = new Carro(350, 20)// instanciando objeto com dois parametros 
+ferrari.acelerar()
+console.log(ferrari.getVelocidadeAtual())
 
