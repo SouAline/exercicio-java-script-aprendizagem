@@ -1,5 +1,5 @@
 import React from "react";
-export {CommentDetails as default};
+
 
 const CommentDetails = props => {
     return(
@@ -19,3 +19,5 @@ const CommentDetails = props => {
     </div>
     )
 }
+
+export {CommentDetails as default};
