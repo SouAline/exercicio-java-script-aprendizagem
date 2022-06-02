@@ -7,9 +7,9 @@ const carrinho = [
 
 //Retornar um array apenas com os preços
 //let resultado = carrinho.map(preco);
-const paraObjeto = (json) => Json.parse(json);
+const paraObjeto = (json) => JSON.parse(json);
 const apenasPreco = (produto) => produto.preco;
-//Primeiro map caham a funcao que transforma o jason em objeto e o segundo map chama a funcao que acessa apenas o preco do objeto
+//Primeiro map chama a funcao que transforma o jason em objeto e o segundo map chama a funcao que acessa apenas o preco do objeto
 const resultado = carrinho.map(paraObjeto).map(apenasPreco);
 
 console.log(resultado);
